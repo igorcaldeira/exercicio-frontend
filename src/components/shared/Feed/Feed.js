@@ -5,14 +5,14 @@ import { FeedContent, Divisor } from './Feed.style';
 
 const Feed = ({ content }) =>
   content.map((itemContent, itemIndex) => (
-    <FeedContent>
+    <FeedContent key={itemContent.id}>
       {itemIndex === 0 ? (
         <>
-          <FeedHighlight key={itemContent.id} content={itemContent} />
+          <FeedHighlight content={itemContent} />
           <Divisor />
         </>
       ) : (
-        <FeedItem key={itemContent.id} content={itemContent} />
+        <FeedItem content={itemContent} />
       )}
     </FeedContent>
   ));

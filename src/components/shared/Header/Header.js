@@ -29,7 +29,9 @@ const Header = ({ picture, name, occupation, cta, social }) => (
       </Cta>
       <div>
         {social.map(({ name, link }) => (
-          <Button variation="rounded">{icons[name]}</Button>
+          <Button key={name} variation="rounded">
+            {icons[name]}
+          </Button>
         ))}
       </div>
     </ProfileHeader.BasicInfo>

@@ -29,7 +29,7 @@ const ContactType = ({ type, name }) =>
 
 const Contact = ({ content }) =>
   content.map(({ name, type }) => (
-    <ContactItem>
+    <ContactItem key={name}>
       <ContactType name={name} type={type} />
     </ContactItem>
   ));

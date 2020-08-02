@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Provider, useSelector } from 'react-redux';
+import React from 'react';
+import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 import theme from 'assets/style/theme';
 import GlobalStyle from 'components/style/GlobalStyle';

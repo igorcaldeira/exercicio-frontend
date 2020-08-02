@@ -5,7 +5,7 @@ import { Highlight, Image } from './FeedHighlight.style';
 import { GoThumbsup } from 'react-icons/go';
 
 const FeedHighlight = ({ content }) => {
-  const { title, subtitle, description, picture, url } = content;
+  const { title, subtitle, description, picture } = content;
   return (
     <Highlight>
       <h4>{title}</h4>

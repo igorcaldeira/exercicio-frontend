@@ -7,11 +7,11 @@ const Skills = ({ content }) => (
   <>
     <Paragraph>{content.description}</Paragraph>
     {content?.list?.map(({ item, rank, progress }) => (
-      <>
+      <React.Fragment key={item}>
         <Title>{item}</Title>
         <Description>{rank}</Description>
         <ProgressBar progress={progress} />
-      </>
+      </React.Fragment>
     ))}
     <Link>More on Coderwall</Link>
   </>

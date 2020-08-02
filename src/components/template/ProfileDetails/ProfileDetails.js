@@ -9,14 +9,18 @@ import Feed from 'components/shared/Feed';
 import About from 'components/shared/About';
 import Profile from './ProfileDetails.style';
 
+const getProfileData = (dispatch) => {
+  dispatch(profileUseCases.getProfile());
+};
+
 const ProfileDetails = () => {
   const dispatch = useDispatch();
   const { content, loading } = useSelector(({ profile }) => profile.getProfile);
   const shouldShowInfo = Boolean(content && !loading);
 
   useEffect(() => {
-    dispatch(profileUseCases.getProfile());
-  }, []);
+    getProfileData(dispatch);
+  }, [dispatch]);
 
   return (
     shouldShowInfo && (
