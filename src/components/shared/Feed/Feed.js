@@ -3,8 +3,8 @@ import FeedItem from './FeedItem';
 import FeedHighlight from './FeedHighlight';
 import { FeedContent, Divisor } from './Feed.style';
 
-function Feed({ content }) {
-  return content.map((itemContent, itemIndex) => (
+const Feed = ({ content }) =>
+  content.map((itemContent, itemIndex) => (
     <FeedContent>
       {itemIndex === 0 ? (
         <>
@@ -16,7 +16,6 @@ function Feed({ content }) {
       )}
     </FeedContent>
   ));
-}
 
 Feed.defaultProps = {
   content: [],

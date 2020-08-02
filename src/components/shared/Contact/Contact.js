@@ -27,13 +27,12 @@ const ContactType = ({ type, name }) =>
     ),
   }[type] || null);
 
-const Contact = ({ content }) => {
-  return content.map(({ name, type }) => (
+const Contact = ({ content }) =>
+  content.map(({ name, type }) => (
     <ContactItem>
       <ContactType name={name} type={type} />
     </ContactItem>
   ));
-};
 
 Contact.defaultProps = {
   content: [],

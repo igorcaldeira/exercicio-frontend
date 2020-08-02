@@ -2,13 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Bar } from './Progress.style';
 
-const ProgressBar = ({ title, description, progress }) => {
-  return (
-    <div>
-      <Bar progress={progress} />
-    </div>
-  );
-};
+const ProgressBar = ({ title, description, progress }) => (
+  <div>
+    <Bar progress={progress} />
+  </div>
+);
 
 ProgressBar.propTypes = {
   progress: PropTypes.number,

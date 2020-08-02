@@ -10,8 +10,8 @@ export const ButtonVariation = styled.button`
   padding: 0.5rem 0.8rem;
   border: none;
   text-transform: uppercase;
-  background-color: ${(props) => props?.theme?.color?.[buttonColors[props?.variation]]};
   color: white;
+  background-color: ${(props) => props?.theme?.color?.[buttonColors[props?.variation]]};
   border-radius: ${(props) => (props?.variation === 'rounded' ? '100%' : '0.3rem')};
 
   svg {

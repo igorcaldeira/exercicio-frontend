@@ -6,15 +6,13 @@ import GlobalStyle from 'components/style/GlobalStyle';
 import ProfileDetails from 'components/template/ProfileDetails';
 import store from 'store/store';
 
-const Profile = () => {
-  return (
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <ProfileDetails />
-        <GlobalStyle />
-      </ThemeProvider>
-    </Provider>
-  );
-};
+const Profile = () => (
+  <Provider store={store}>
+    <ThemeProvider theme={theme}>
+      <ProfileDetails />
+      <GlobalStyle />
+    </ThemeProvider>
+  </Provider>
+);
 
 export default Profile;

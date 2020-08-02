@@ -9,9 +9,8 @@ import Feed from 'components/shared/Feed';
 import About from 'components/shared/About';
 import Profile from './ProfileDetails.style';
 
-const ProfileDetails = (props) => {
+const ProfileDetails = () => {
   const dispatch = useDispatch();
-
   const { content, loading } = useSelector(({ profile }) => profile.getProfile);
   const shouldShowInfo = Boolean(content && !loading);
 

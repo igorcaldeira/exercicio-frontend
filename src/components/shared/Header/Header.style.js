@@ -33,7 +33,6 @@ ProfileHeader.Wrapper = styled.div`
   display: grid;
   grid-template-rows: 1fr;
   gap: 0 ${(props) => props?.theme?.gap?.lg};
-
   grid-template-columns: 1fr;
   grid-template-areas: 'profile-pic' 'basic-info';
 
