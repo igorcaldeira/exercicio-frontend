@@ -12,10 +12,15 @@ FeedItemSlot.Wrapper = styled.div`
   width: 100%;
   margin-bottom: ${(props) => props?.theme?.gap?.md};
   display: grid;
-  grid-template-columns: 12rem 1fr;
   grid-template-rows: 1fr;
   gap: ${(props) => props?.theme?.gap?.md} ${(props) => props?.theme?.gap?.md};
-  grid-template-areas: 'picture picture description description description description';
+  grid-template-columns: 1fr;
+  grid-template-areas: 'picture' 'description';
+
+  @media (min-width: 1281px) {
+    grid-template-columns: 12rem 1fr;
+    grid-template-areas: 'picture picture description description description description';
+  }
 `;
 
 FeedItemSlot.Picture = styled.div`

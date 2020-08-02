@@ -25,11 +25,17 @@ Profile.Grid = styled.div`
   margin: 0 auto;
   max-width: ${(props) => props?.theme?.siteWidth};
   min-height: 100vh;
-  grid-template-columns: 1fr 1fr [f] 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1.3fr 1fr;
+  grid-template-columns: 1fr;
   gap: ${(props) => props?.theme?.gap?.lg} ${(props) => props?.theme?.gap?.lg};
-  grid-template-areas: 'feed feed feed feed sidebar sidebar' 'feed feed feed feed sidebar sidebar';
+  grid-template-areas: 'feed' 'sidebar';
   margin-bottom: ${(props) => props?.theme?.gap?.lg};
+  padding: ${(props) => props?.theme?.gap?.lg};
+
+  @media (min-width: 1281px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'feed feed feed feed sidebar sidebar';
+    padding: 0;
+  }
 `;
 
 Profile.Feed = styled.div`
