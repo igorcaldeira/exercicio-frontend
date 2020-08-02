@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
   html {
     font-size: 62.5%; /* Now 10px = 1rem! */
@@ -57,7 +56,9 @@ const GlobalStyle = createGlobalStyle`
 
   h3{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: ${(props) => props?.theme?.color?.font?.primary};
   }
 
   p{

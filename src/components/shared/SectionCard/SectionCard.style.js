@@ -6,6 +6,5 @@ export const CardWrapper = styled.div`
 `;
 
 export const CardTitle = styled.h3`
-  font-size: 4rem;
   margin-bottom: ${(props) => props?.theme?.gap?.md};
 `;

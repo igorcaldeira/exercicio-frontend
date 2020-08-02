@@ -1,8 +1,10 @@
 import React from 'react';
+import { Cover } from './Header.style';
 
-function Header({ name, occupation, cta, social }) {
+function Header({ picture, name, occupation, cta, social }) {
   return (
     <>
+      <Cover src={require(`assets/img/${picture}`)} />
       <h1>{name}</h1>
       <h2>{occupation}</h2>
       <div>{cta}</div>
