@@ -10,7 +10,7 @@ const FeedItem = ({ content }) => {
         <Cover src={require(`assets/img/${picture}`)} />
       </FeedItemSlot.Picture>
       <FeedItemSlot.Description>
-        <h5>{title}</h5>
+        <h4>{title}</h4>
         <p>{description}</p>
         <Link href={url}>Find out more</Link>
       </FeedItemSlot.Description>

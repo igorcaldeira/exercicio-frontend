@@ -1,18 +1,22 @@
 const theme = {
+  siteWidth: '70rem',
   color: {
     bg: '#DAE3E7',
     fg: 'white',
     font: {
-      primary: '#313F4E',
+      primary: '#404954',
       secondary: '#818D97',
     },
     primary: '#69CA8E',
     secondary: '#4A9FC6',
     social: '#AFB2BC',
+    light: '#E5E6E6',
   },
   gap: {
-    lg: '2rem',
+    xl: '2.5rem',
+    lg: '1.7rem',
     md: '1rem',
+    sm: '0.5rem',
   },
 };
 

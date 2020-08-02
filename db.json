@@ -6,13 +6,16 @@
     "picture": "profile.png",
     "contacts": [
       {
-        "name": "San francisco, US"
+        "name": "San francisco, US",
+        "type": "location"
       },
       {
-        "name": "james@website.com.br"
+        "name": "james@website.com.br",
+        "type": "email"
       },
       {
-        "name": "website.com"
+        "name": "website.com",
+        "type": "site"
       }
     ],
     "social": [
@@ -21,19 +24,19 @@
         "link": "www.google.com.br"
       },
       {
-        "name": "twitter",
+        "name": "google",
         "link": "www.google.com.br"
       },
       {
-        "name": "twitter",
+        "name": "linkedin",
         "link": "www.google.com.br"
       },
       {
-        "name": "twitter",
+        "name": "github",
         "link": "www.google.com.br"
       },
       {
-        "name": "twitter",
+        "name": "yandex",
         "link": "www.google.com.br"
       }
     ],

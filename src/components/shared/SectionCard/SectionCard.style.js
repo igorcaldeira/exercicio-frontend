@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const CardWrapper = styled.div`
+  margin-top: ${(props) => props?.theme?.gap?.md};
   background-color: ${(props) => props?.theme?.color?.fg};
-  padding: ${(props) => props?.theme?.gap?.md};
+  padding: ${(props) => props?.theme?.gap?.lg} ${(props) => props?.theme?.gap?.lg};
 `;
 
 export const CardTitle = styled.h3`

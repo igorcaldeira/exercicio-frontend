@@ -45,26 +45,27 @@ const GlobalStyle = createGlobalStyle`
     font-weight: bold;
   }
 
-  h1, h3, h4, h5, p, span {
+  h1, h2, h3, h4, h5, p, span, a {
     font-family: 'Montserrat', sans-serif;
   }
 
   h2{
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.0rem;
   }
 
   h3{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
     font-weight: bold;
     color: ${(props) => props?.theme?.color?.font?.primary};
   }
 
-  p{
-    font-size: 1.6rem;
+  h4{
+    font-weight: bold;
   }
-  
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 `;
 
 export default GlobalStyle;

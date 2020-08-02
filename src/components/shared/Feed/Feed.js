@@ -1,13 +1,16 @@
 import React from 'react';
 import FeedItem from './FeedItem';
 import FeedHighlight from './FeedHighlight';
-import { FeedContent } from './Feed.style';
+import { FeedContent, Divisor } from './Feed.style';
 
 function Feed({ content }) {
   return content.map((itemContent, itemIndex) => (
     <FeedContent>
       {itemIndex === 0 ? (
-        <FeedHighlight key={itemContent.id} content={itemContent} />
+        <>
+          <FeedHighlight key={itemContent.id} content={itemContent} />
+          <Divisor />
+        </>
       ) : (
         <FeedItem key={itemContent.id} content={itemContent} />
       )}

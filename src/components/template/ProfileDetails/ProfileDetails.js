@@ -34,7 +34,7 @@ const ProfileDetails = (props) => {
         </Profile.Header>
         <Profile.Grid>
           <Profile.Sidebar>
-            <SectionCard title="About me">
+            <SectionCard>
               <Contact content={content?.contacts} />
             </SectionCard>
             <SectionCard title="Skills">
