@@ -11,7 +11,11 @@ const Button = ({ variation, children }) => {
 };
 
 Button.propTypes = {
-  theme: PropTypes.oneOf(['primary', 'secondary', 'rounded']),
+  variation: PropTypes.oneOf(['primary', 'secondary', 'rounded']),
+};
+
+Button.defaultProps = {
+  variation: 'primary',
 };
 
 export default Button;

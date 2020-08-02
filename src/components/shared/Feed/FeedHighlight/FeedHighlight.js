@@ -1,16 +1,24 @@
 import React from 'react';
-import Link from 'components/shared/Link';
-import { Image } from './FeedHighlight.style';
+import Button from 'components/shared/Button';
+import Ribbon from 'components/shared/Ribbon';
+import { Highlight, Image } from './FeedHighlight.style';
+import { GoThumbsup } from 'react-icons/go';
 
 const FeedHighlight = ({ content }) => {
   const { title, subtitle, description, picture, url } = content;
   return (
-    <>
-      <Image src={require(`assets/img/${picture}`)} />
+    <Highlight>
       <h4>{title}</h4>
+      <h5>{subtitle}</h5>
+      <Ribbon>
+        <Image src={require(`assets/img/${picture}`)} />
+      </Ribbon>
       <p>{description}</p>
-      <Link href={url}>Find out more</Link>
-    </>
+      <Button variation="secondary">
+        <GoThumbsup />
+        Back my project
+      </Button>
+    </Highlight>
   );
 };
 

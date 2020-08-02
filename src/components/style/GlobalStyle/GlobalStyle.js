@@ -1,44 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-
-  html {
-    font-size: 62.5%; /* Now 10px = 1rem! */
-  }
-
-  body {
-    font-size: 16px;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    background-color: ${(props) => props?.theme?.color?.bg};
-  }
-
-  footer {
-    font-size: 13px;
-    font-size: 1.3rem;
-  }
-
-  footer small {
-    font-size: 10px;
-    font-size: 1rem;
-  }
-
-  *, *:before, *:after { box-sizing: border-box; -moz-box-sizing: border-box; image-rendering: -webkit-optimize-contrast;}
-
-  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline; -webkit-text-size-adjust: 100%;}
-
-  article, aside, details, figcaption, figure,
-  footer, header, hgroup, menu, nav, section {display: block;}
-  body {line-height: 1;}
-  ul, ol{list-style: none;}
-  blockquote, q {quotes: none;}
-  blockquote:before, blockquote:after,
-  q:before, q:after {content: '';content: none;}
-  table {border-collapse: collapse;border-spacing: 0;}
-  button, html input[type=button], input[type=reset], input[type=submit] { -webkit-appearance: button; cursor: pointer; }
-  input:not([type='radio']):not([type='checkbox']), textarea, select{-webkit-appearance: none;}
-  mark {background-color: transparent;font-weight: bold;color: inherit;}
-
   h1{
     color: ${(props) => props?.theme?.color?.font?.primary};
     font-size: 2.8rem;
@@ -50,21 +12,36 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2{
-    font-size: 2.0rem;
+    font-size: 26px;
+    color: ${(props) => props?.theme?.color?.font?.secondary};
+    font-weight: 400;
   }
 
   h3{
-    font-size: 1.8rem;
+    font-size: 24px;
     font-weight: bold;
     color: ${(props) => props?.theme?.color?.font?.primary};
   }
 
   h4{
+      font-size: 16px;
     font-weight: bold;
+    color: ${(props) => props?.theme?.color?.font?.secondary};
+    margin-bottom: ${(props) => props?.theme?.gap?.sm};
+  }
+
+  h5{
+      font-size: 14px;
+    color: ${(props) => props?.theme?.color?.font?.secondary};
+    margin-bottom: ${(props) => props?.theme?.gap?.sm};
   }
 
   p {
-    font-family: Arial, Helvetica, sans-serif;
+    color: #1E1E20;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-bottom: ${(props) => props?.theme?.gap?.sm};
   }
 `;
 

@@ -5,8 +5,6 @@ import { Bar } from './Progress.style';
 const ProgressBar = ({ title, description, progress }) => {
   return (
     <div>
-      {title}
-      {description}
       <Bar progress={progress} />
     </div>
   );

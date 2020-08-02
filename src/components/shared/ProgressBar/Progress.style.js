@@ -5,7 +5,6 @@ export const Bar = styled.div`
   content: ' ';
   width: 100%;
   height: 1rem;
-  margin-top: ${(props) => props?.theme?.gap?.sm};
   margin-bottom: ${(props) => props?.theme?.gap?.sm};
   background-color: ${(props) => props?.theme?.color?.light};
 

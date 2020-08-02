@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+export const Cta = styled.div`
+  float: right;
+
+  svg {
+    margin-right: ${(props) => props?.theme?.gap?.sm};
+  }
+`;
+
 export const Image = styled.img`
   width: 100%;
   margin-bottom: ${(props) => props?.theme?.gap?.md};
@@ -21,6 +29,19 @@ ProfileHeader.Picture = styled.div`
 
 ProfileHeader.BasicInfo = styled.div`
   grid-area: basic-info;
+
+  h1 {
+    margin-top: ${(props) => props?.theme?.gap?.lg};
+  }
+
+  h2 {
+    margin-top: ${(props) => props?.theme?.gap?.sm};
+    margin-bottom: ${(props) => props?.theme?.gap?.sm};
+  }
+
+  button {
+    margin-right: ${(props) => props?.theme?.gap?.sm};
+  }
 `;
 
 export { ProfileHeader };

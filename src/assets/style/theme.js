@@ -8,8 +8,9 @@ const theme = {
       secondary: '#818D97',
     },
     primary: '#69CA8E',
+    primaryDark: '#56B852',
     secondary: '#4A9FC6',
-    social: '#AFB2BC',
+    social: '#B1B7BF',
     light: '#E5E6E6',
   },
   gap: {

@@ -11,7 +11,7 @@ export const Divisor = styled.hr`
   display: block;
   border: none;
   height: 0.1rem;
-  margin-top: ${(props) => props?.theme?.gap?.md};
-  margin-bottom: ${(props) => props?.theme?.gap?.md};
+  margin-top: ${(props) => props?.theme?.gap?.lg};
+  margin-bottom: ${(props) => props?.theme?.gap?.lg};
   background-color: ${(props) => props?.theme?.color?.light};
 `;

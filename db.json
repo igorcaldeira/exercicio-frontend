@@ -1,7 +1,7 @@
 {
   "projects": {
     "name": "James Lee",
-    "occupation": "Web developer",
+    "occupation": "Web App Developer",
     "cta": "Contact me",
     "picture": "profile.png",
     "contacts": [
@@ -40,29 +40,32 @@
         "link": "www.google.com.br"
       }
     ],
-    "about": "Cras maximus in arcu sit amet pulvinar. Aliquam tristique nulla ac dui fringilla, feugiat tempus ipsum viverra. Duis a magna semper, imperdiet purus quis, convallis dui. Sed sit amet malesuada nibh. Phasellus dapibus commodo enim, ut vestibulum risus iaculis non. In a viverra risus, ac pharetra massa. Donec cursus feugiat ligula vel accumsan. Praesent in massa lacinia dui semper venenatis a eget erat. Maecenas elementum, nulla id dapibus fringilla, enim augue semper tortor, et pellentesque nisl metus non dui. Phasellus accumsan erat eu eros mollis, ac consectetur est accumsan.",
+    "about": [
+      "Write a brief, nulla id dapibus fringilla, enim augue semper tortor, et pellentesque nisl metus non dui. Phasellus accumsan erat eu eros mollis, ac consectetur est accumsan.",
+      "Cras maximus in arcu sit amet pulvinar. Aliquam tristique nulla ac dui fringilla, feugiat tempus ipsum viverra. Duis a magna semper, imperdiet purus quis, convallis dui. Sed sit amet malesuada nibh. Phasellus dapibus commodo enim, ut vestibulum risus iaculis non. In a viverra risus, ac pharetra massa. Donec cursus feugiat ligula vel accumsan. Praesent in massa lacinia dui semper venenatis a eget erat."
+    ],
     "skills": {
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut justo efficitur, fringilla mauris a, pulvinar lacus. Phasellus semper enim et turpis fringilla vestibulum. Donec aliquet rutrum justo, id auctor mi porttitor consequat. Ut dolor libero, viverra ac molestie id, elementum vel metus. Phasellus eleifend justo at cursus pulvinar.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut justo efficitur, fringilla mauris a, pulvinar lacus. Phasellus semper enim et turpis fringilla vestibulum.",
       "list": [
         {
           "item": "Python & Django",
           "rank": "Expert",
-          "progress": 75
+          "progress": 90
         },
         {
-          "item": "Python & Django 2",
+          "item": "Javascript & JQuery",
           "rank": "Expert",
-          "progress": 75
+          "progress": 90
         },
         {
-          "item": "Python & Django 3",
+          "item": "HTML5, CSS3, SASS & LESS",
           "rank": "Expert",
-          "progress": 75
+          "progress": 90
         },
         {
-          "item": "Python & Django 4",
-          "rank": "Expert",
-          "progress": 60
+          "item": "Ruby on Rails",
+          "rank": "Pro",
+          "progress": 70
         }
       ]
     },

@@ -6,6 +6,7 @@ import SectionCard from 'components/shared/SectionCard';
 import Contact from 'components/shared/Contact';
 import Skills from 'components/shared/Skills';
 import Feed from 'components/shared/Feed';
+import About from 'components/shared/About';
 import Profile from './ProfileDetails.style';
 
 const ProfileDetails = (props) => {
@@ -42,7 +43,9 @@ const ProfileDetails = (props) => {
             </SectionCard>
           </Profile.Sidebar>
           <Profile.Feed>
-            <SectionCard title="About me">{content?.about}</SectionCard>
+            <SectionCard title="About me">
+              <About content={content?.about} />
+            </SectionCard>
             <SectionCard title="Latest projects">
               <Feed content={content?.feed} />
             </SectionCard>

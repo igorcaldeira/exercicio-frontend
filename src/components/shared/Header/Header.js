@@ -1,9 +1,9 @@
 import React from 'react';
 import { GrTwitter, GrLinkedinOption } from 'react-icons/gr';
-import { FaYandexInternational, FaGithubAlt } from 'react-icons/fa';
+import { FaYandexInternational, FaGithubAlt, FaPaperPlane } from 'react-icons/fa';
 import { AiOutlineGooglePlus } from 'react-icons/ai';
 import Button from 'components/shared/Button';
-import { ProfileHeader, Image } from './Header.style';
+import { ProfileHeader, Image, Cta } from './Header.style';
 
 const icons = {
   twitter: <GrTwitter />,
@@ -22,10 +22,15 @@ const Header = ({ picture, name, occupation, cta, social }) => {
       <ProfileHeader.BasicInfo>
         <h1>{name}</h1>
         <h2>{occupation}</h2>
-        <div>{cta}</div>
+        <Cta>
+          <Button>
+            <FaPaperPlane />
+            {cta}
+          </Button>
+        </Cta>
         <div>
           {social.map(({ name, link }) => (
-            <Button>{icons[name]}</Button>
+            <Button variation="rounded">{icons[name]}</Button>
           ))}
         </div>
       </ProfileHeader.BasicInfo>

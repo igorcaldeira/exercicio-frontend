@@ -3,7 +3,7 @@ import Link from 'components/shared/Link';
 import { FeedItemSlot, Cover } from './FeedItem.style';
 
 const FeedItem = ({ content }) => {
-  const { title, subtitle, description, picture, url } = content;
+  const { title, description, picture, url } = content;
   return (
     <FeedItemSlot.Wrapper>
       <FeedItemSlot.Picture>

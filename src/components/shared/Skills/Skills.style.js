@@ -11,7 +11,6 @@ export const Title = styled.h4`
 `;
 
 export const Description = styled.p`
-  display: inline-block;
-  text-align: right;
+  float: right;
   color: ${(props) => props?.theme?.color?.light};
 `;
