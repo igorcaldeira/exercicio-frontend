@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     font-size: 1.6rem;
     line-height: 1.5;
+    background-color: ${(props) => props?.theme?.color?.bg};
   }
 
   footer {
@@ -41,12 +42,28 @@ const GlobalStyle = createGlobalStyle`
 
   h1{
     color: ${(props) => props?.theme?.color?.font?.primary};
-    font-size: 5rem;
+    font-size: 2.8rem;
+    font-weight: bold;
   }
 
-  h1, h2, h3, h4, h5, p, span {
+  h1, h3, h4, h5, p, span {
     font-family: 'Montserrat', sans-serif;
   }
+
+  h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.0rem;
+  }
+
+  h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+  }
+
+  p{
+    font-size: 1.6rem;
+  }
+  
 `;
 
 export default GlobalStyle;

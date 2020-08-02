@@ -5,35 +5,47 @@ import Header from 'components/shared/Header';
 import SectionCard from 'components/shared/SectionCard';
 import Contact from 'components/shared/Contact';
 import Skills from 'components/shared/Skills';
-import ProfileWrapper from './ProfileDetails.style';
+import Feed from 'components/shared/Feed';
+import Profile from './ProfileDetails.style';
 
 const ProfileDetails = (props) => {
   const dispatch = useDispatch();
 
-  const profileDetails = useSelector(({ profile }) => profile.getProfile);
+  const profileDetails = useSelector(({ profile }) => profile.getProfile.content);
 
   useEffect(() => {
     dispatch(profileUseCases.getProfile());
   }, []);
 
   return (
-    <ProfileWrapper.Grid>
-      <ProfileWrapper.Header>
-        <Header />
-      </ProfileWrapper.Header>
-      <ProfileWrapper.Sidebar>
-        <SectionCard title="About me">
-          <Skills />
-        </SectionCard>
-        <SectionCard title="Skills">
-          <Skills />
-        </SectionCard>
-      </ProfileWrapper.Sidebar>
-      <ProfileWrapper.Feed>
-        <SectionCard title="About me">Lorem</SectionCard>
-        <SectionCard title="Latest projects">{JSON.stringify(profileDetails)}</SectionCard>
-      </ProfileWrapper.Feed>
-    </ProfileWrapper.Grid>
+    <>
+      <Profile.Header>
+        <Profile.HeaderContent>
+          <Header
+            name={profileDetails?.name}
+            occupation={profileDetails?.occupation}
+            cta={profileDetails?.cta}
+            social={profileDetails?.social}
+          />
+        </Profile.HeaderContent>
+      </Profile.Header>
+      <Profile.Grid>
+        <Profile.Sidebar>
+          <SectionCard title="About me">
+            <Contact content={profileDetails?.contacts} />
+          </SectionCard>
+          <SectionCard title="Skills">
+            <Skills content={profileDetails?.skills} />
+          </SectionCard>
+        </Profile.Sidebar>
+        <Profile.Feed>
+          <SectionCard title="About me">{profileDetails?.about}</SectionCard>
+          <SectionCard title="Latest projects">
+            <Feed content={profileDetails?.feed} />
+          </SectionCard>
+        </Profile.Feed>
+      </Profile.Grid>
+    </>
   );
 };
 

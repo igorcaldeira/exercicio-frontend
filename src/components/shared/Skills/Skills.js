@@ -1,12 +1,23 @@
 import React from 'react';
 
-function Skills() {
+function Skills({ content }) {
   return (
     <>
-      <h1>James Lee</h1>
-      <h2>Web App Developer</h2>
+      {content.description}
+      {content?.list?.map(({ item, rank, progress }) => (
+        <>
+          <div>
+            {item} {rank}
+          </div>
+          <div>{progress}</div>
+        </>
+      ))}
     </>
   );
 }
+
+Skills.defaultProps = {
+  content: {},
+};
 
 export default Skills;

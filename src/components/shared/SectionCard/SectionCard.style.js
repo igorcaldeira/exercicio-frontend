@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const CardWrapper = styled.div`
+  background-color: ${(props) => props?.theme?.color?.fg};
   padding: ${(props) => props?.theme?.gap?.md};
 `;
 

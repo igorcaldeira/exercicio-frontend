@@ -1,5 +1,5 @@
 const endpoints = {
-  profile: 'http://localhost:3000/projects',
+  profile: 'http://localhost:3004/projects',
 };
 
 export default endpoints;

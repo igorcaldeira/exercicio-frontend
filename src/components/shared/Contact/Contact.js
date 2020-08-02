@@ -1,12 +1,17 @@
 import React from 'react';
 
-function Contact() {
+function Contact({ content }) {
   return (
     <>
-      <h1>James Lee</h1>
-      <h2>Web App Developer</h2>
+      {content.map(({ name }) => (
+        <div>{name}</div>
+      ))}
     </>
   );
 }
+
+Contact.defaultProps = {
+  content: [],
+};
 
 export default Contact;
